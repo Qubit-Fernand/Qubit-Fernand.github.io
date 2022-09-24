@@ -18,9 +18,9 @@ export default siteConfig({
 
   // social usernames (optional)
 
-  twitter: 'transitive_bs',
+  twitter: '',
   github: 'Qubit-Fernand',
-  linkedin: 'fisch2',
+  linkedin: '',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
