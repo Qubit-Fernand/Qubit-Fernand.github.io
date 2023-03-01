@@ -18,7 +18,7 @@ export default siteConfig({
 
   // social usernames (optional)
 
-  twitter: '__Antientropy__',
+  twitter: '__AntiEntropy__',
   github: 'Qubit-Fernand',
   linkedin: 'antientropy',
   // newsletter: '#', // optional newsletter URL
@@ -58,11 +58,11 @@ export default siteConfig({
       // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
       url: 'https://zhoushuo.tech'
     },
-    {
-      title: 'Blog Posts',
-      // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-      url: 'https://fernand.tech'
-    },
+    //{
+    //  title: 'Blog Posts',
+    // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
+    //  url: 'https://fernand.tech'
+    //},
     {
       title: 'Email',
       // pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1',
