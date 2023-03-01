@@ -56,7 +56,7 @@ export default siteConfig({
     {
       title: 'Homepage',
       // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-      url: 'https://zhoushuo.tech'
+      url: 'https://shuozhou.tech'
     },
     //{
     //  title: 'Blog Posts',
