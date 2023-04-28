@@ -12,11 +12,6 @@ import TweetEmbed from 'react-tweet-embed'
 
 // core notion renderer
 import { NotionRenderer } from 'react-notion-x'
-import { Code } from 'react-notion-x'
-import { Collection } from 'react-notion-x'
-import { Equation } from 'react-notion-x'
-import { Modal } from 'react-notion-x'
-import { Pdf } from 'react-notion-x'
 
 // utils
 import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils'
