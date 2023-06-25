@@ -56,7 +56,7 @@ export default siteConfig({
     {
       title: 'Curriculum Vitae',
       // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-      url: 'https://shuozhou.tech'
+      url: 'https://drive.google.com/file/d/1HFuAip_QgKrYlJTIjBope_OfwZhqmlxq/view?usp=sharing'
     },
     //{
     //  title: 'Blog Posts',
