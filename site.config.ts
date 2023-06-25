@@ -9,8 +9,8 @@ export default siteConfig({
   rootNotionSpaceId: 'e57fa69576c34239932f087196971d29',
 
   // basic site info (required)
-  name: 'Introduction to Quantum Computing',
-  domain: 'quantumcomputation.tech',
+  name: 'Anti-entropic Field',
+  domain: 'fernand.tech',
   author: 'Fernand',
 
   // open graph metadata (optional)
