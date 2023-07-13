@@ -53,11 +53,11 @@ export default siteConfig({
   // navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: 'Curriculum Vitae',
+    // {
+      // title: 'Curriculum Vitae',
       // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-      url: 'https://drive.google.com/file/d/1kvB8sdxcciBhZS9rtzdesH-HH7lyVEqN/view?usp=drive_link'
-    },
+      // url: 'https://drive.google.com/file/d/1kvB8sdxcciBhZS9rtzdesH-HH7lyVEqN/view?usp=drive_link'
+    // },
     //{
     //  title: 'Blog Posts',
     //  pageId: 'f1199d37579b41cbabfc0b5174f4256a',
