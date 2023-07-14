@@ -285,7 +285,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={footer}
       />
-      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=9bI6VFHtuxCsCfJZVHN_PrALvga3SyA4KIn5zNqc2BA&cl=ffffff&w=a"></script>
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=9bI6VFHtuxCsCfJZVHN_PrALvga3SyA4KIn5zNqc2BA'></script>
       <GitHubShareButton />
     </>
   ) // done
