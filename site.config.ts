@@ -53,19 +53,12 @@ export default siteConfig({
   // navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    // {
-      // title: 'Curriculum Vitae',
-      // pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-      // url: 'https://drive.google.com/file/d/1kvB8sdxcciBhZS9rtzdesH-HH7lyVEqN/view?usp=drive_link'
-    // },
-    //{
-    //  title: 'Blog Posts',
-    //  pageId: 'f1199d37579b41cbabfc0b5174f4256a',
-    //  url: 'https://fernand.tech'
-    //},
+    {
+      title: 'Google Scholar',
+      url: 'https://scholar.google.com/'
+    },
     {
       title: 'Email',
-      // pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1',
       url: 'mailto:AntiEntropy@pku.edu.cn'
     }
   ]
