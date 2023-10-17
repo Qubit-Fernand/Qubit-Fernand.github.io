@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: 'e57fa69576c34239932f087196971d29',
 
   // basic site info (required)
-  name: 'Shuo Zhou',
+  name: 'Anti-entropic Field',
   domain: 'fernand.tech',
   author: 'Fernand',
 
