@@ -1,4 +1,3 @@
-# Please visit [fernand.tech](https://fernand.tech)
 
 <p align="center">
   <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
