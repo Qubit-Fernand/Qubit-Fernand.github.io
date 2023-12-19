@@ -55,7 +55,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Google Scholar',
-      url: 'https://scholar.google.com/'
+      url: 'https://scholar.google.com/citations?user=amgAnjYAAAAJ'
     },
     {
       title: 'Email',
