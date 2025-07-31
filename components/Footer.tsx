@@ -5,6 +5,7 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 
@@ -95,6 +96,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaLinkedin />
+          </a>
+        )}
+        
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://www.instagram.com/${config.instagram}`}
+            title={`Instagram @${config.instagram}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
           </a>
         )}
 

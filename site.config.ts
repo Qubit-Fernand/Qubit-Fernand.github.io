@@ -21,6 +21,8 @@ export default siteConfig({
   twitter: '__AntiEntropy__',
   github: 'Qubit-Fernand',
   linkedin: 'antientropy',
+  instagram: 'fernand.qubit',
+  
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
