@@ -197,6 +197,17 @@
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
+/*
+ * Homepage cover is rendered before <main class="index-page">, so `.index-page ...`
+ * selectors won't hit it. Scope by the stable root page block class instead.
+ */
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover-wrapper img,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover .lazy-image-real,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover .lazy-image-preview {
+  object-position: center 73% !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .notion-page-cover-wrapper,
   .notion-page-cover-wrapper span,
@@ -348,6 +359,36 @@
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
 
+/* Increase homepage profile icon by ~12%. */
+.index-page .notion-page-icon-hero.notion-page-icon-image {
+  width: 139px;
+  height: 139px;
+  margin-left: -69.5px;
+}
+
+.index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
+  top: -69.5px;
+}
+
+.index-page.notion-page-has-cover {
+  padding-top: 96px;
+}
+
+@media only screen and (max-width: 768px) {
+  .index-page .notion-page-icon-hero.notion-page-icon-image {
+    width: 130px;
+    height: 130px;
+    margin-left: -65px;
+  }
+
+  .index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
+    top: -65px;
+  }
+
+  .index-page.notion-page-has-cover {
+    padding-top: 96px;
+  }
+}
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
   border-radius: 50%;
