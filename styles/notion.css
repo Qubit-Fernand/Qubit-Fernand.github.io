@@ -197,6 +197,14 @@
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
+/* Keep homepage cover crop aligned with Notion's intended focal point. */
+.index-page .notion-page-cover,
+.index-page .notion-page-cover-wrapper img,
+.index-page .notion-page-cover .lazy-image-real,
+.index-page .notion-page-cover .lazy-image-preview {
+  object-position: center 67% !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .notion-page-cover-wrapper,
   .notion-page-cover-wrapper span,
@@ -346,6 +354,37 @@
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+}
+
+/* Increase homepage profile icon by ~30%. */
+.index-page .notion-page-icon-hero.notion-page-icon-image {
+  width: 161px;
+  height: 161px;
+  margin-left: -80.5px;
+}
+
+.index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
+  top: -80.5px;
+}
+
+.index-page.notion-page-has-cover {
+  padding-top: 116px;
+}
+
+@media only screen and (max-width: 768px) {
+  .index-page .notion-page-icon-hero.notion-page-icon-image {
+    width: 142px;
+    height: 142px;
+    margin-left: -71px;
+  }
+
+  .index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
+    top: -71px;
+  }
+
+  .index-page.notion-page-has-cover {
+    padding-top: 108px;
+  }
 }
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
