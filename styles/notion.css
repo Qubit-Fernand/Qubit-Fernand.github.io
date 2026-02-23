@@ -368,7 +368,7 @@
 }
 
 .index-page.notion-page-has-cover {
-  padding-top: 102px;
+  padding-top: 96px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -383,7 +383,7 @@
   }
 
   .index-page.notion-page-has-cover {
-    padding-top: 100px;
+    padding-top: 96px;
   }
 }
 .notion-page-icon-hero.notion-page-icon-image span,
