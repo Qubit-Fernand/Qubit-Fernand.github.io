@@ -197,11 +197,14 @@
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
-/* Keep homepage cover crop aligned with Notion's intended focal point. */
-.index-page .notion-page-cover,
-.index-page .notion-page-cover-wrapper img,
-.index-page .notion-page-cover .lazy-image-real,
-.index-page .notion-page-cover .lazy-image-preview {
+/*
+ * Homepage cover is rendered before <main class="index-page">, so `.index-page ...`
+ * selectors won't hit it. Scope by the stable root page block class instead.
+ */
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover-wrapper img,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover .lazy-image-real,
+.notion-block-5f6bf54917834c538f8b4c0264582174 .notion-page-cover .lazy-image-preview {
   object-position: center 83% !important;
 }
 
