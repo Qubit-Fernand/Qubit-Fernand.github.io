@@ -21,6 +21,8 @@ export default siteConfig({
   twitter: '__AntiEntropy__',
   github: 'Qubit-Fernand',
   linkedin: 'antientropy',
+  instagram: 'fernand.qubit',
+  
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -55,7 +57,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Google Scholar',
-      url: 'https://scholar.google.com/'
+      url: 'https://scholar.google.com/citations?user=amgAnjYAAAAJ'
     },
     {
       title: 'Email',
