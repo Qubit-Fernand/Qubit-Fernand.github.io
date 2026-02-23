@@ -356,34 +356,34 @@
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
 
-/* Increase homepage profile icon by ~30%. */
+/* Increase homepage profile icon by ~20%. */
 .index-page .notion-page-icon-hero.notion-page-icon-image {
-  width: 161px;
-  height: 161px;
-  margin-left: -80.5px;
+  width: 149px;
+  height: 149px;
+  margin-left: -74.5px;
 }
 
 .index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
-  top: -80.5px;
+  top: -74.5px;
 }
 
 .index-page.notion-page-has-cover {
-  padding-top: 116px;
+  padding-top: 108px;
 }
 
 @media only screen and (max-width: 768px) {
   .index-page .notion-page-icon-hero.notion-page-icon-image {
-    width: 142px;
-    height: 142px;
-    margin-left: -71px;
+    width: 136px;
+    height: 136px;
+    margin-left: -68px;
   }
 
   .index-page.notion-page-has-cover .notion-page-icon-hero.notion-page-icon-image {
-    top: -71px;
+    top: -68px;
   }
 
   .index-page.notion-page-has-cover {
-    padding-top: 108px;
+    padding-top: 104px;
   }
 }
 .notion-page-icon-hero.notion-page-icon-image span,
