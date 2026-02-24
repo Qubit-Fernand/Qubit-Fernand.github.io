@@ -3,7 +3,7 @@
 ## GitHub Pages Deployment Notes
 
 1. If GitHub Pages is configured to deploy from `github-pages` branch `/(root)`, the root `index.html` acts as a redirect page and forwards visitors to `https://fernand.tech/`.
-2. If GitHub Pages is configured to deploy from `github-pages` branch `/docs`, it serves the Notion-rendered static site directly (effectively the same destination as the redirect result).
+2. If GitHub Pages is configured to deploy from `github-pages` branch `/docs`, it serves the Notion-rendered **static** site directly. Keep the `docs` export **updated** in time so it stays consistent with the redirect destination.
 
 ## Update docs on `github-pages`
 
