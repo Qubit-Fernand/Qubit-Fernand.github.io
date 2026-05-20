@@ -18,7 +18,7 @@
 }
 
 .index-page {
-  --notion-max-width: min(1800px, calc(100vw - 8vw));
+  --notion-max-width: 900px;
 }
 
 .notion-text {
@@ -49,7 +49,7 @@
 }
 
 .notion-gallery-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 6vmin;
   gap: 6vmin;
 }
@@ -150,10 +150,6 @@
   .index-page.notion-page {
     padding-left: 2vw;
     padding-right: 2vw;
-  }
-
-  .notion-gallery-grid {
-    grid-template-columns: 1fr;
   }
 }
 
