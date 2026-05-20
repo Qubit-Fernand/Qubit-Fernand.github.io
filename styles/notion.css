@@ -86,6 +86,8 @@
 }
 
 .notion-collection-card-cover {
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 16px;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
