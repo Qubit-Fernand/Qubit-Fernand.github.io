@@ -75,6 +75,7 @@
 .notion-collection-card {
   border-radius: 16px;
   box-shadow: none;
+  background: transparent !important;
 }
 
 .notion-collection-card-cover img {
@@ -83,6 +84,12 @@
 
 .notion-collection-card {
   overflow: visible;
+}
+
+.notion-collection-card:hover,
+.notion-collection-card:focus,
+.notion-collection-card:active {
+  background: transparent !important;
 }
 
 .notion-collection-card-cover {
@@ -104,6 +111,7 @@
 
 .notion-collection-card-body {
   padding: 10px;
+  background: transparent !important;
 }
 
 /* only target safari */
