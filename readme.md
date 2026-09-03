@@ -1,5 +1,7 @@
 # Personal Homepage: [fernand.tech](https://fernand.tech)
 
+![fernand.tech homepage](./public/readme-preview.png)
+
 ## GitHub Pages Deployment Notes
 
 1. If GitHub Pages is configured to deploy from `github-pages` branch `/(root)`, the root `index.html` acts as a redirect page and forwards visitors to `https://fernand.tech/`.
