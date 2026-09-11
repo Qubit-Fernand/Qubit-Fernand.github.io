@@ -62,6 +62,12 @@ export default class MyDocument extends Document {
             />
             <Main />
 
+            <script
+              type='text/javascript'
+              id='mapmyvisitors'
+              src='https://mapmyvisitors.com/map.js?d=jphtf95t_gxsh22CxBQ_2xtA8csQOD-jp3rF5A27jqE&cl=ffffff&w=a'
+            />
+
             <NextScript />
           </body>
         </Html>

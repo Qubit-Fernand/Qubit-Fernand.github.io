@@ -18,6 +18,12 @@
 
 # misc
 .DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+desktop.ini
 *.pem
 
 # ide
