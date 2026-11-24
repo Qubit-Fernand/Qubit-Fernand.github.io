@@ -22,3 +22,5 @@ jobs:
 #          REDIS_HOST: ${{ secrets.REDIS_HOST }}
 #          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
         run: npm run build
+      - name: Verify social image on Linux
+        run: bash scripts/test-social-image.sh
