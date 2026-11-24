@@ -1,4 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 })
@@ -6,6 +8,16 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
   swcMinify: true,
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      // chrome-aws-lambda tries puppeteer first and falls back to puppeteer-core.
+      // Both resolve to the installed, version-matched core package on the server.
+      config.resolve.alias.puppeteer = path.dirname(
+        require.resolve('puppeteer-core/package.json')
+      )
+    }
+    return config
+  },
   images: {
     domains: [
       'www.notion.so',
