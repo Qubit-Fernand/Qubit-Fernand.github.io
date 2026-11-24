@@ -25,3 +25,19 @@ What `npm run deploy:docs` does:
 2. Exports static files to `out/`.
 3. Replaces `docs/` with the latest export output.
 4. Ensures `docs/.nojekyll` exists.
+
+## Public assets
+
+The `github-pages` branch is currently published from its repository root. Files
+in `assets/` are available at `https://qubit-fernand.github.io/assets/<filename>`.
+For example, `assets/README.txt` is available at
+<https://qubit-fernand.github.io/assets/README.txt>. The root `index.html`
+continues to redirect to fernand.tech; asset URLs do not use that redirect.
+
+To publish a file, add it under `assets/` on the `github-pages` branch, commit,
+and push that branch. Use its direct URL as the link in Notion or fernand.tech.
+The repository and all files here are public, so only add material intended for
+public access. Prefer stable, descriptive filenames. GitHub Pages changes can
+take a few minutes to deploy. If Pages is reconfigured to publish `/docs`, these
+root-level asset URLs will no longer be served unless the assets are moved or
+copied into the new publishing directory.
