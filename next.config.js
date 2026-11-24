@@ -8,8 +8,10 @@ module.exports = withBundleAnalyzer({
   swcMinify: true,
   webpack: (config, { isServer }) => {
     if (isServer) {
-      // Keep the Chromium package on disk so its runtime can locate bin/*.br.
-      config.externals.push({ 'next-api-og-image': 'commonjs next-api-og-image' })
+      // Keep Chromium on disk; this package's main field points to a missing file.
+      config.externals.push({
+        'next-api-og-image': 'commonjs next-api-og-image/lib/next-api-og-image.js'
+      })
     }
     return config
   },
