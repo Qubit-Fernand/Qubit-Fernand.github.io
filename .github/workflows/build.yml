@@ -8,17 +8,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: package-lock.json
-
       - run: npm ci
       - name: build
-#        TODO Enable those lines below if you use a Redis cache, you'll also need to configure GitHub Repository Secrets
-#        env:
-#          REDIS_HOST: ${{ secrets.REDIS_HOST }}
-#          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
         run: npm run build
+      - name: Test social image in Lambda-like environment
+        shell: bash
+        run: |
+          set -uo pipefail
+          AWS_LAMBDA_FUNCTION_NAME=site-diagnostic npm run start -- -H 127.0.0.1 -p 43219 > /tmp/site-diagnostic.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in {1..30}; do
+            if curl -s -o /dev/null http://127.0.0.1:43219/api/search-notion; then break; fi
+            sleep 1
+          done
+          code=$(curl -sS --max-time 90 -o /tmp/site-diagnostic-image -w '%{http_code}' 'http://127.0.0.1:43219/api/social-image?id=5f6bf54917834c538f8b4c0264582174')
+          echo "Social image HTTP status: $code"
+          file /tmp/site-diagnostic-image
+          if [ "$code" != 200 ]; then
+            tail -40 /tmp/site-diagnostic.log
+            exit 1
+          fi
